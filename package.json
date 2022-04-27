@@ -1,7 +1,9 @@
 {
     "name": "metalearth-11ty",
     "version": "1.0.0",
+    "description": "Blog with my Metal Earth models, based on 11ty SSG",
     "main": "index.js",
+    "author": "Sergio Cinos <sergio.cinos@gmail.com>",
     "license": "MIT",
     "devDependencies": {
         "@11ty/eleventy": "^1.0.1",
@@ -14,10 +16,10 @@
         "eslint-import-resolver-enhanced-resolve": "portal:/Users/sergio/src/projects/eslint-import-resolver-enhanced-resolve",
         "eslint-plugin-import": "^2.26.0",
         "eslint-plugin-jsx-a11y": "^6.5.1",
+        "eslint-plugin-md": "^1.0.19",
         "eslint-plugin-prettier": "^4.0.0",
         "photoswipe": "^5.2.4",
-        "prettier": "^2.6.2",
-        "terser": "^5.12.1"
+        "prettier": "^2.6.2"
     },
     "packageManager": "yarn@3.2.0",
     "scripts": {
