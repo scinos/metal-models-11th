@@ -1,0 +1,12 @@
+{
+    "navbar": [
+        { "title": "Models", "url": "/" },
+        { "title": "About", "url": "/about/" }
+    ],
+
+    "collections": [
+        { "title": "Star Wars", "tag": "star-wars" },
+        { "title": "Batman", "tag": "batman" },
+        { "title": "Other", "tag": "other" }
+    ]
+}

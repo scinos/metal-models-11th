@@ -1,0 +1,48 @@
+.images {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.pswp-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+}
+
+figure {
+    margin: 1rem;
+    position: relative
+}
+
+figure figcaption {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 5px;
+    background-color: var(--c-bg-secondary);
+    width: 100%;
+    text-align: center
+}
+
+.gallery-entry figure {
+    transition: .1s linear;
+    margin: 2rem
+}
+
+.gallery-entry figure img {
+    filter: grayscale(1)
+}
+
+.gallery-entry figure:hover {
+    transform: perspective(100px) translateZ(3px) rotate(-1deg);
+    filter: drop-shadow(10px 10px 20px #000)
+}
+
+.gallery-entry figure:hover img {
+    filter: none
+}
+
+

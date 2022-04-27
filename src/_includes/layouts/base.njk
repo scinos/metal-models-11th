@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="{{eleventy.generator}}">
+  <title>{{ title }}</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&amp;display=swap" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+  <link href="/css/photoswipe.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="/" class="logo">
+      <img src="/img/logo_64.png" alt="Metal Folds logo" />
+      <span>Metal folds<span>
+    </a>
+    <nav>
+        <ul>
+        {%- for entry in data.navbar %}
+          <li{% if entry.url == page.url %} class="active"{% endif %}>
+            <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+          </li>
+        {%- endfor %}
+        </ul>
+    </nav>
+  </header>
+
+
+  <div class="content">
+    {{ content | safe }}
+  </div>
+
+  <div class="footer" xmlns:cc="http://creativecommons.org/ns#" >
+    <div class="personal-card">
+      <div class="name">
+        <span property="cc:attributionName"><span class="prefix">by</span> Sergio Cinos</span>
+      </div>
+      <div class="links">
+        <a href="https://twitter.com/scinos" class="twitter" target="_blank" rel="noopener noreferrer">
+          <svg>{% include "../../img/twitter.svg" %}</svg>
+          <span>Twitter profile</span>
+        </a>
+        <a href="https://github.com/scinos" class="github" target="_blank" rel="noopener noreferrer">
+          <svg>{% include "../../img/github.svg" %}</svg>
+          <span>GitHub profile</span>
+        </a>
+        <a href="https://www.linkedin.com/in/sergiocinos/" class="linkedin" target="_blank" rel="noopener noreferrer">
+          <svg>{% include "../../img/linkedin.svg" %}</svg>
+          <span>LinkedIn profile</span>
+        </a>
+      </div>
+    </div>
+    <div class="copyright">
+      <a rel="cc:attributionURL" href="https://metalfolds.page/">This work</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="Creative Commons logo"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="Creative Commons - Attribution logo"></a>
+      <br/>
+      Built with <a href="https://www.11ty.dev//" target="_blank" rel="noopener noreferrer">{{eleventy.generator}}</a>. Source in <a href="https://github.com/scinos/metal-models" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </div>
+
+  {%if tags | isModel %}
+    <script src="/js/photoswipe.js"></script>
+  {%endif%}
+</body>
+
+</html>

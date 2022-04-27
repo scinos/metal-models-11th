@@ -1,0 +1,24 @@
+---
+layout: base
+title: Models
+description: List of Metal Earth projects
+---
+
+<h1>{{ title }}</h1>
+
+{%- for collection in data.collections -%}
+    <h2>{{collection.title}}</h2>
+
+    <ul class="images">
+        {%- for model in collections[collection.tag] -%}
+            <li>
+                <a class="gallery-entry" href="{{model.url}}">
+                    <figure>
+                        <img src="{{model.url}}img/entry.webp" height="200" width="200" alt="Picture of Metal Earth model {{ model.data.title }}"/>
+                        <figcaption>{{ model.data.title }}</figcaption>
+                    </figure>
+                </a>
+            </li>
+        {%- endfor -%}
+    </ul>
+{%- endfor -%}

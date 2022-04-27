@@ -1,0 +1,21 @@
+:root {
+    --c-bg: #272d34;
+    --c-bg-secondary: #1f4663;
+    --c-brand: #f5b053;
+    --c-brand-light: #e3c97c;
+    --c-text: #e0dedf;
+    --c-border: #97c9c7;
+
+    --font-family: "Titillium Web", sans-serif;
+
+    --navbar-height: calc(64px + 2rem);
+    --navbar-padding-v: .7rem;
+    --navbar-line-height: calc( var(--navbar-height) - 2 * var(--navbar-padding-v) );
+    --footer-height: 5rem;
+    --content-width: 740px;
+
+    --c-logo: var(--c-brand);
+    --c-nav-active: var(--c-brand);
+    --c-bg-navbar: var(--c-bg);
+    --c-text-accent: var(--c-brand);
+}
