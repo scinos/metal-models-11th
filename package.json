@@ -13,11 +13,12 @@
         "eslint": "^8.14.0",
         "eslint-config-airbnb-base": "^15.0.0",
         "eslint-config-prettier": "^8.5.0",
-        "eslint-import-resolver-enhanced-resolve": "portal:/Users/sergio/src/projects/eslint-import-resolver-enhanced-resolve",
+        "eslint-import-resolver-enhanced-resolve": "^1.0.5",
         "eslint-plugin-import": "^2.26.0",
         "eslint-plugin-jsx-a11y": "^6.5.1",
         "eslint-plugin-md": "^1.0.19",
         "eslint-plugin-prettier": "^4.0.0",
+        "firebase-tools": "^10.7.2",
         "photoswipe": "^5.2.4",
         "prettier": "^2.6.2"
     },
