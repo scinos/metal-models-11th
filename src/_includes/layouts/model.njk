@@ -6,7 +6,7 @@ layout: base
 
 {{ content | safe }}
 
-{% if officialModel|length %}<a href="{{officialModel | url}} " target="_blank" rel="noopener noreferrer">Official model</a>{%endif%}
+{% if officialModel|length %}<a href="{{officialModel | url}} " {{externalLink}}>Official model</a>{%endif%}
 
 
 {% set height = "3840" if verticalPictures else "2160"%}
