@@ -1,6 +1,7 @@
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const CleanCSS = require('clean-css');
 const path = require('path');
+const eleventyJsxPlugin = require('./lib/eleventy-jsx-plugin');
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter('cssmin', function (code) {
@@ -21,11 +22,8 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addWatchTarget('src/css');
 
-    eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
-    eleventyConfig.addLayoutAlias('model', 'layouts/model.njk');
-    eleventyConfig.addLayoutAlias('page', 'layouts/page.njk');
-
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
+    eleventyConfig.addPlugin(eleventyJsxPlugin);
 
     eleventyConfig.addPassthroughCopy('src/img');
     eleventyConfig.addPassthroughCopy('src/models/**/*.webp');
@@ -37,5 +35,8 @@ module.exports = function (eleventyConfig) {
 
     return {
         passthroughFileCopy: true,
+        dir: {
+            input: 'src',
+        },
     };
 };

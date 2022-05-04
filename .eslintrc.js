@@ -10,7 +10,9 @@ module.exports = {
         'plugin:prettier/recommended',
     ],
     settings: {
-        'import/resolver': 'enhanced-resolve',
+        'import/resolver': {
+            'enhanced-resolve': {},
+        },
     },
     overrides: [
         {

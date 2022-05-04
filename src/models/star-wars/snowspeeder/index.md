@@ -3,8 +3,8 @@ title: Snowspeeder
 description:
 date: 2021-10-14
 pictures:
-    model: 5
-    detail: 6
+    model: 6
+    detail: 5
 officialModel: https://www.metalearth.com/starwars/snowspeeder
 ---
 
