@@ -1,8 +1,10 @@
+import { useContext } from 'react';
 import { Header } from './header';
 import { Footer } from './footer';
+import { EleventyContext } from '../../../lib/eleventy-jsx-plugin/eleventy-context';
 
-export function HTMLPage(props) {
-    const { children, title, eleventy, data, page } = props;
+export function HTMLPage({ children }) {
+    const { title, eleventy, data, page } = useContext(EleventyContext);
     const { generator } = eleventy;
 
     return (

@@ -1,9 +1,9 @@
 import { Link } from './_includes/components/link';
 import { HTMLPage } from './_includes/components/html-page';
 
-function AboutPage(props) {
+function AboutPage() {
     return (
-        <HTMLPage {...props}>
+        <HTMLPage>
             <p>I'm Sergio, a Software Engineer from Spain.</p>
             <p>
                 A couple of years ago I discovered a{' '}

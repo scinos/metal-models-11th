@@ -1,12 +1,15 @@
+/* eslint-disable react/no-danger */
+import { useContext } from 'react';
 import { Link } from '../components/link';
 import { HTMLPage } from '../components/html-page';
+import { EleventyContext } from '../../../lib/eleventy-jsx-plugin/eleventy-context';
 
-const OfficialModel = ({ officialModel }) => {
+function OfficialModel({ officialModel }) {
     if (!officialModel) return null;
     return <Link href={officialModel}>Official model</Link>;
-};
+}
 
-const Image = ({ img, url, width, height }) => {
+function Image({ img, url, width, height }) {
     const scaleImg = `${url}img/${img}.jpg`;
     const scaleTumb = `${url}img/${img}_thumb.webp`;
 
@@ -17,16 +20,17 @@ const Image = ({ img, url, width, height }) => {
             </figure>
         </a>
     );
-};
+}
 
-function Model(props) {
+function Model() {
     const {
         content,
         officialModel,
         verticalPictures,
         page: { url },
         pictures,
-    } = props;
+    } = useContext(EleventyContext);
+
     const height = verticalPictures ? 3840 : 2160;
     const width = verticalPictures ? 2160 : 3840;
     const modelImages = [...Array(pictures.model).keys()].map(
@@ -36,18 +40,18 @@ function Model(props) {
         (i) => `detail_${i + 1}`
     );
     return (
-        <HTMLPage {...props}>
+        <HTMLPage>
             <div dangerouslySetInnerHTML={{ __html: content }} />
 
             <OfficialModel officialModel={officialModel} />
 
             <div className="pswp-gallery" id="gallery">
                 <Image img="scale" {...{ url, width, height }} />
-                {modelImages.map((img) => (
-                    <Image {...{ img, url, width, height }} />
+                {modelImages.map((img, idx) => (
+                    <Image {...{ img, url, width, height }} key={idx} />
                 ))}
-                {detailImages.map((img) => (
-                    <Image {...{ img, url, width, height }} />
+                {detailImages.map((img, idx) => (
+                    <Image {...{ img, url, width, height }} key={idx} />
                 ))}
             </div>
         </HTMLPage>

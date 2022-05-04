@@ -1,13 +1,6 @@
+import { useContext } from 'react';
 import { HTMLPage } from './_includes/components/html-page';
-
-function Collection({ title, models }) {
-    return (
-        <>
-            <h2>{title}</h2>
-            <ul className="images">{models.map(Model)}</ul>
-        </>
-    );
-}
+import { EleventyContext } from '../lib/eleventy-jsx-plugin/eleventy-context';
 
 function Model({ url, data }) {
     const { title } = data;
@@ -26,12 +19,31 @@ function Model({ url, data }) {
     );
 }
 
-function Index(props) {
-    const { data, collections } = props;
+function Collection({ title, models }) {
     return (
-        <HTMLPage {...props}>
-            {data.collections.map(({ tag, title }) => {
-                return <Collection title={title} models={collections[tag]} />;
+        <>
+            <h2>{title}</h2>
+            <ul className="images">
+                {models.map(({ url, data }, idx) => {
+                    return <Model url={url} data={data} key={idx} />;
+                })}
+            </ul>
+        </>
+    );
+}
+function Index() {
+    const { collections, data } = useContext(EleventyContext);
+
+    return (
+        <HTMLPage>
+            {data.collections.map(({ tag, title }, idx) => {
+                return (
+                    <Collection
+                        title={title}
+                        models={collections[tag]}
+                        key={idx}
+                    />
+                );
             })}
         </HTMLPage>
     );

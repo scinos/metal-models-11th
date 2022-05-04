@@ -1,4 +1,8 @@
-export function Header({ pageUrl, data }) {
+import { useContext } from 'react';
+import { EleventyContext } from '../../../lib/eleventy-jsx-plugin/eleventy-context';
+
+export function Header() {
+    const { data, page } = useContext(EleventyContext);
     return (
         <header className="navbar">
             <a href="/" className="logo">
@@ -7,9 +11,12 @@ export function Header({ pageUrl, data }) {
             </a>
             <nav>
                 <ul>
-                    {data.navbar.map(({ url, title }) => {
+                    {data.navbar.map(({ url, title }, idx) => {
                         return (
-                            <li className={url == pageUrl ? 'active' : ''}>
+                            <li
+                                key={idx}
+                                className={url === page.url ? 'active' : ''}
+                            >
                                 {' '}
                                 <a href={url}>{title}</a>{' '}
                             </li>

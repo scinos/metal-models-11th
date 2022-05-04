@@ -1,9 +1,14 @@
+import { useContext } from 'react';
 import { Link } from './link';
 import TwitterLogo from '../../img/twitter.svg';
 import GitHubLogo from '../../img/github.svg';
 import LinkedInLogo from '../../img/linkedin.svg';
+import { EleventyContext } from '../../../lib/eleventy-jsx-plugin/eleventy-context';
 
-export function Footer({ generator }) {
+export function Footer() {
+    const { eleventy } = useContext(EleventyContext);
+    const { generator } = eleventy;
+
     return (
         <div className="footer">
             <div className="personal-card">

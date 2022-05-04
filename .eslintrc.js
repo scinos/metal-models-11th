@@ -5,7 +5,8 @@ module.exports = {
     },
     extends: [
         'eslint:recommended',
-        'airbnb-base',
+        'airbnb',
+        'plugin:react/jsx-runtime',
         'plugin:md/prettier',
         'plugin:prettier/recommended',
     ],
@@ -41,6 +42,9 @@ module.exports = {
                 ],
             },
         },
+        {
+            files: ['*.jsx'],
+        },
     ],
     rules: {
         indent: ['error', 4],
@@ -48,6 +52,10 @@ module.exports = {
             'error',
             { devDependencies: true },
         ],
+        'import/prefer-default-export': 'off',
         'class-methods-use-this': 'off',
+        'react/prop-types': 'off',
+        'react/no-unescaped-entities': 'off',
+        'react/no-array-index-key': 'off',
     },
 };

@@ -1,8 +1,8 @@
 import { HTMLPage } from './_includes/components/html-page';
 
-function Page404(props) {
+function Page404() {
     return (
-        <HTMLPage {...props}>
+        <HTMLPage>
             <div>
                 The specified file was not found on this website. Please check
                 the URL for mistakes and try again.
