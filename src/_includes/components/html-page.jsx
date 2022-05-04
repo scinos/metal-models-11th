@@ -3,7 +3,7 @@ import { Header } from './header';
 import { Footer } from './footer';
 import { EleventyContext } from '../../../lib/eleventy-jsx-plugin/eleventy-context';
 
-export function HTMLPage({ children }) {
+export function HTMLPage({ children, photoswipe }) {
     const { title, eleventy, data, page } = useContext(EleventyContext);
     const { generator } = eleventy;
 
@@ -22,7 +22,9 @@ export function HTMLPage({ children }) {
                     rel="stylesheet"
                 />
                 <link href="/css/style.css" rel="stylesheet" />
-                <link href="/css/photoswipe.css" rel="stylesheet" />
+                {photoswipe && (
+                    <link href="/css/photoswipe.css" rel="stylesheet" />
+                )}
             </head>
 
             <body>
@@ -35,11 +37,7 @@ export function HTMLPage({ children }) {
 
                 <Footer generator={generator} />
 
-                {/*
-
-{%if tags | isModel %}
-  <script src="/js/photoswipe.js"></script>
-{%endif%} */}
+                {photoswipe && <script src="/js/photoswipe.js" />}
             </body>
         </html>
     );

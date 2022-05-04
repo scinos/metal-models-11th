@@ -40,7 +40,7 @@ function Model() {
         (i) => `detail_${i + 1}`
     );
     return (
-        <HTMLPage>
+        <HTMLPage photoswipe>
             <div dangerouslySetInnerHTML={{ __html: content }} />
 
             <OfficialModel officialModel={officialModel} />
