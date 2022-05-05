@@ -46,29 +46,20 @@ export function Footer() {
             </div>
             <div className="copyright">
                 <Link href="https://metalfolds.page/">This work</Link> is
-                licensed under{' '}
+                licensed underx{' '}
                 <Link
                     href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1"
-                    target="_blank"
-                    rel="license noopener noreferrer"
-                    style={{ display: 'inline-block' }}
+                    external
+                    rel={['license']}
                 >
                     CC BY 4.0
                     <img
-                        style={{
-                            height: '22px',
-                            marginLeft: '3px',
-                            verticalAlign: 'text-bottom',
-                        }}
+                        className="cc-logo"
                         src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
                         alt="Creative Commons logo"
                     />
                     <img
-                        style={{
-                            height: '22px',
-                            marginLeft: '3px',
-                            verticalAlign: 'text-bottom',
-                        }}
+                        className="cc-logo"
                         src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
                         alt="Creative Commons - Attribution logo"
                     />

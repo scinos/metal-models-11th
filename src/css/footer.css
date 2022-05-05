@@ -17,6 +17,12 @@
     margin-right: 1rem;
 }
 
+.footer .copyright img.cc-logo{
+    height: 22px;
+    margin-left: 3px;
+    vertical-align: text-bottom;
+}
+
 .footer .personal-card {
     min-width: 10rem;
     display: flex;
@@ -59,3 +65,4 @@
     height: 24px;
     fill: var(--c-brand)
 }
+

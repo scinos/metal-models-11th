@@ -6,7 +6,11 @@ import { EleventyContext } from '../../../lib/eleventy-jsx-plugin/eleventy-conte
 
 function OfficialModel({ officialModel }) {
     if (!officialModel) return null;
-    return <Link href={officialModel}>Official model</Link>;
+    return (
+        <Link href={officialModel} external>
+            Official model
+        </Link>
+    );
 }
 
 function Image({ img, url, width, height }) {
@@ -16,7 +20,7 @@ function Image({ img, url, width, height }) {
     return (
         <a href={scaleImg} data-pswp-width={width} data-pswp-height={height}>
             <figure>
-                <img src={scaleTumb} loading="lazy" />
+                <img src={scaleTumb} loading="lazy" alt="" />
             </figure>
         </a>
     );
