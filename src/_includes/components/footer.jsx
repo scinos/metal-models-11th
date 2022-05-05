@@ -6,8 +6,11 @@ import LinkedInLogo from '../../img/linkedin.svg';
 import { EleventyContext } from '../../../lib/eleventy-jsx-plugin/eleventy-context';
 
 export function Footer() {
-    const { eleventy } = useContext(EleventyContext);
-    const { generator } = eleventy;
+    const {
+        eleventy: { generator },
+        data,
+    } = useContext(EleventyContext);
+    const { repo, github, twitter, linkedin, main, eleventy } = data.urls;
 
     return (
         <div className="footer">
@@ -18,35 +21,22 @@ export function Footer() {
                     </span>
                 </div>
                 <div className="links">
-                    <Link
-                        href="https://twitter.com/scinos"
-                        className="twitter"
-                        external
-                    >
+                    <Link href={twitter} className="twitter" external>
                         <TwitterLogo />
                         <span>Twitter profile</span>
                     </Link>
-                    <Link
-                        href="https://github.com/scinos"
-                        className="github"
-                        external
-                    >
+                    <Link href={github} className="github" external>
                         <GitHubLogo />
                         <span>GitHub profile</span>
                     </Link>
-                    <Link
-                        href="https://www.linkedin.com/in/sergiocinos/"
-                        className="linkedin"
-                        external
-                    >
+                    <Link href={linkedin} className="linkedin" external>
                         <LinkedInLogo />
                         <span>LinkedIn profile</span>
                     </Link>
                 </div>
             </div>
             <div className="copyright">
-                <Link href="https://metalfolds.page/">This work</Link> is
-                licensed underx{' '}
+                <Link href={main}>This work</Link> is licensed under{' '}
                 <Link
                     href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1"
                     external
@@ -66,15 +56,13 @@ export function Footer() {
                 </Link>
                 <br />
                 Built with{' '}
-                <Link href="https://www.11ty.dev/" external>
+                <Link href={eleventy} external>
                     {generator}
                 </Link>
                 . Source in{' '}
-                <Link
-                    href="https://github.com/scinos/metal-folds-11ty"
-                    external
-                >
-                    GitHub
+                <Link href={repo} external>
+                    {' '}
+                    GitHub{' '}
                 </Link>
                 .
             </div>
