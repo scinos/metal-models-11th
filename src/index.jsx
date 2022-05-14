@@ -1,6 +1,6 @@
 import { useContext } from 'react';
+import EleventyContext from 'eleventy-plugin-react-ssr/context';
 import { HTMLPage } from './_includes/components/html-page';
-import { EleventyContext } from '../lib/eleventy-jsx-plugin/eleventy-context';
 
 function Model({ url, data }) {
     const { title } = data;

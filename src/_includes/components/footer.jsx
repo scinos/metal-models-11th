@@ -1,9 +1,9 @@
 import { useContext } from 'react';
+import EleventyContext from 'eleventy-plugin-react-ssr/context';
 import { Link } from './link';
 import TwitterLogo from '../../img/twitter.svg';
 import GitHubLogo from '../../img/github.svg';
 import LinkedInLogo from '../../img/linkedin.svg';
-import { EleventyContext } from '../../../lib/eleventy-jsx-plugin/eleventy-context';
 
 export function Footer() {
     const {

@@ -1,8 +1,8 @@
 /* eslint-disable react/no-danger */
 import { useContext } from 'react';
+import EleventyContext from 'eleventy-plugin-react-ssr/context';
 import { Link } from '../components/link';
 import { HTMLPage } from '../components/html-page';
-import { EleventyContext } from '../../../lib/eleventy-jsx-plugin/eleventy-context';
 
 function OfficialModel({ officialModel }) {
     if (!officialModel) return null;

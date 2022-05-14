@@ -1,7 +1,7 @@
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const CleanCSS = require('clean-css');
 const path = require('path');
-const eleventyJsxPlugin = require('./lib/eleventy-jsx-plugin');
+const eleventyJsxPlugin = require('eleventy-plugin-react-ssr');
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter('cssmin', function (code) {
@@ -23,7 +23,11 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addWatchTarget('src/css');
 
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
-    eleventyConfig.addPlugin(eleventyJsxPlugin);
+    eleventyConfig.addPlugin(eleventyJsxPlugin, {
+        babelConfig: {
+            plugins: [['inline-react-svg', { svgo: false }]],
+        },
+    });
 
     eleventyConfig.addPassthroughCopy('src/img');
     eleventyConfig.addPassthroughCopy('src/models/**/*.webp');

@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { EleventyContext } from '../../../lib/eleventy-jsx-plugin/eleventy-context';
+import EleventyContext from 'eleventy-plugin-react-ssr/context';
 
 export function Header() {
     const { data, page } = useContext(EleventyContext);

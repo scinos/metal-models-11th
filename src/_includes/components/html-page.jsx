@@ -1,7 +1,7 @@
 import { useContext } from 'react';
+import EleventyContext from 'eleventy-plugin-react-ssr/context';
 import { Header } from './header';
 import { Footer } from './footer';
-import { EleventyContext } from '../../../lib/eleventy-jsx-plugin/eleventy-context';
 
 export function HTMLPage({ children, photoswipe }) {
     const { title, eleventy, data, page } = useContext(EleventyContext);
