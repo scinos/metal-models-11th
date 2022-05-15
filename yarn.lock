@@ -4189,16 +4189,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eleventy-plugin-react-ssr@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "eleventy-plugin-react-ssr@npm:1.0.0"
+"eleventy-plugin-react-ssr@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "eleventy-plugin-react-ssr@npm:1.0.2"
   dependencies:
     "@babel/core": ^7.17.10
     "@babel/register": ^7.17.7
   peerDependencies:
     react: 17.x || 18.x
     react-dom: 17.x || 18.x
-  checksum: 5ad60b366794ee8adb4ee76f6bc8511803b11338b3df5a1876a07db86d4b8f0554c054476656bf119008635c49d8fc157ec458ebf04e38af02c08ca80320bcb1
+  checksum: 79205780a2f5597200e9fb9093c37120742f092d2a03c456fd75d7fefe899458a9ad496784540ae885f721353d3d4bd41c410f051192fed2d4bcb482ff03f644
   languageName: node
   linkType: hard
 
@@ -7998,7 +7998,7 @@ __metadata:
     "@babel/register": ^7.17.7
     babel-plugin-inline-react-svg: ^2.0.1
     clean-css: ^5.3.0
-    eleventy-plugin-react-ssr: ^1.0.0
+    eleventy-plugin-react-ssr: ^1.0.2
     esbuild: ^0.14.38
     eslint: ^8.14.0
     eslint-config-airbnb: ^19.0.4
