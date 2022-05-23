@@ -1,12 +1,9 @@
 ---
-title: 'Batmobile: Batman movie (1989)'
-description:
-    Another 3D model from Batman, the Batmobile from 1989 movie. Lots of subtly curved bodywork, great detail in the
-    intake and exhausts.
+title: 'Batmobile: "Batman"'
+description: Metal model of the batmobile from the Batman movie (1989), by Metal Earth
 date: 2021-11-08
 pictures:
-    model: 6
-    detail: 6
+    entry: 7
 officialModel: https://www.metalearth.com/batman/batman-movie-batmobile
 ---
 

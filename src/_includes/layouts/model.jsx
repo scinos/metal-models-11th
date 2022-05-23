@@ -1,7 +1,10 @@
 /* eslint-disable react/no-danger */
 import { useContext } from 'react';
 import EleventyContext from 'eleventy-plugin-react-ssr/context';
+import path from 'path';
+import fs from 'fs';
 import { Link } from '../components/link';
+import { Image } from '../components/image';
 import { HTMLPage } from '../components/html-page';
 
 function OfficialModel({ officialModel }) {
@@ -13,50 +16,35 @@ function OfficialModel({ officialModel }) {
     );
 }
 
-function Image({ img, url, width, height }) {
-    const scaleImg = `${url}img/${img}.jpg`;
-    const scaleTumb = `${url}img/${img}_thumb.webp`;
-
-    return (
-        <a href={scaleImg} data-pswp-width={width} data-pswp-height={height}>
-            <figure>
-                <img src={scaleTumb} loading="lazy" alt="" />
-            </figure>
-        </a>
-    );
+function Images({ inputPath, width, height }) {
+    const imageDir = path.join(path.dirname(inputPath), `img/`);
+    const images = [];
+    let idx = 0;
+    let imagePath;
+    while (fs.existsSync((imagePath = `${imageDir}${idx++}.jpg`))) {
+        images.push(<Image {...{ imagePath, width, height }} />);
+    }
+    return images;
 }
 
 function Model() {
     const {
         content,
         officialModel,
-        verticalPictures,
-        page: { url },
-        pictures,
+        pictures: { vertical = true },
+        page: { url, inputPath },
     } = useContext(EleventyContext);
 
-    const height = verticalPictures ? 3840 : 2160;
-    const width = verticalPictures ? 2160 : 3840;
-    const modelImages = [...Array(pictures.model).keys()].map(
-        (i) => `model_${i + 1}`
-    );
-    const detailImages = [...Array(pictures.detail).keys()].map(
-        (i) => `detail_${i + 1}`
-    );
+    const height = vertical ? 3840 : 2160;
+    const width = vertical ? 2160 : 3840;
     return (
-        <HTMLPage photoswipe>
+        <HTMLPage isModel>
             <div dangerouslySetInnerHTML={{ __html: content }} />
 
             <OfficialModel officialModel={officialModel} />
 
             <div className="pswp-gallery" id="gallery">
-                <Image img="scale" {...{ url, width, height }} />
-                {modelImages.map((img, idx) => (
-                    <Image {...{ img, url, width, height }} key={idx} />
-                ))}
-                {detailImages.map((img, idx) => (
-                    <Image {...{ img, url, width, height }} key={idx} />
-                ))}
+                <Images {...{ inputPath, url, width, height }} />
             </div>
         </HTMLPage>
     );

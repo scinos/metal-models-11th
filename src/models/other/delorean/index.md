@@ -1,12 +1,9 @@
 ---
 title: 'DeLorean: Back to the Future'
-description:
-    A new 3D metal model, the DeLoerean from Back to the Future. It's a painted model with a lovely interior, nice
-    colours for the lights and the characteristic doors.
+description: Metal model of a DeLoeran car, like the one from Back to the Future, by Metal Earth.
 date: 2021-11-25
 pictures:
-    model: 5
-    detail: 4
+    entry: 2
 officialModel: https://www.metalearth.com/delorean
 ---
 

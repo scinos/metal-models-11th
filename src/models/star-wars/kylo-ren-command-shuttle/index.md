@@ -1,10 +1,10 @@
 ---
 title: Kylo Ren's Command Shuttle
-description:
+description: Metal model of Kylo Ren's command shuttle from The Force Awakens, by Metal Earth.
 date: 2021-10-15
 pictures:
-    model: 4
-    detail: 4
+    vertical: true
+    entry: card
 officialModel: https://www.metalearth.com/starwars/kylo-rens-command-shuttle
 ---
 

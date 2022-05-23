@@ -1,12 +1,9 @@
 ---
-title: 'Batman: Batmobile TV Series (1966)'
-description:
-    This metal model from the classic Batmobile from the TV show was fun to build but challenging due to the curved
-    bodywork.
+title: 'Batmobile: "Batman" TV Series'
+description: Metal model of the batmobile from the TV Show (1966), by Metal Earth.
 date: 2021-11-08
 pictures:
-    model: 6
-    detail: 5
+    entry: 5
 officialModel: https://www.metalearth.com/batman/batman-classic-tv-series-batmobile
 ---
 

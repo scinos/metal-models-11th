@@ -1,10 +1,9 @@
 ---
 title: Sydney Opera House
-description:
+description: Metal model of the Opera House from Sydney, by Metal Earth
 date: 2022-01-13
 pictures:
-    model: 5
-    detail: 4
+    entry: 4
 officialModel: https://www.metalearth.com/sydney-opera-house
 ---
 

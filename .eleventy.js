@@ -8,30 +8,17 @@ module.exports = function (eleventyConfig) {
         return new CleanCSS({}).minify(code).styles;
     });
 
-    eleventyConfig.addFilter('isModel', function (tags) {
-        return tags?.includes('model');
-    });
-
-    eleventyConfig.addNunjucksShortcode('resolve', function (path) {
-        return require.resolve(path);
-    });
-    eleventyConfig.addNunjucksGlobal(
-        'externalLink',
-        'target="_blank" rel="noopener noreferrer"'
-    );
-
     eleventyConfig.addWatchTarget('src/css');
 
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
     eleventyConfig.addPlugin(eleventyJsxPlugin, {
         babelConfig: {
+            cache: true,
             plugins: [['inline-react-svg', { svgo: false }]],
         },
     });
 
     eleventyConfig.addPassthroughCopy('src/img');
-    eleventyConfig.addPassthroughCopy('src/models/**/*.webp');
-    eleventyConfig.addPassthroughCopy('src/models/**/*.jpg');
 
     eleventyConfig.addPassthroughCopy({
         [require.resolve('photoswipe/style.css')]: '/css/photoswipe.css',

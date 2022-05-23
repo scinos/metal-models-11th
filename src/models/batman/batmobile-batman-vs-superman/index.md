@@ -1,10 +1,9 @@
 ---
-title: 'Batmobile: Batman vs Superman (2016)'
-description:
+title: 'Batmobile: "Batman vs Superman"'
+description: Metal model of the batmobile from the Batman vs Superman movie (2016), by Metal Earth
 date: 2022-01-17
 pictures:
-    model: 6
-    detail: 3
+    entry: 7
 officialModel: https://www.metalearth.com/batman/batman-v-superman-batmobile
 ---
 

@@ -1,10 +1,9 @@
 ---
 title: Imperial AT-AT
-description:
+description: Metal model of an Imperial AT-AT walker from Star Wars, by Metal Earth.
 date: 2021-10-16
 pictures:
-    model: 6
-    detail: 4
+    entry: 4
 officialModel: https://www.metalearth.com/imperial-at-at
 ---
 

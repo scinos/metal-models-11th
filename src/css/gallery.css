@@ -19,30 +19,44 @@ figure {
 }
 
 figure figcaption {
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 5px;
     background-color: var(--c-bg-secondary);
     width: 100%;
-    text-align: center
+    text-align: center;
+
+    box-shadow: inset 0 0 0 0 var(--c-text-accent);
+    color: var(--c-text-accent);
+    transition: .1s ease-in-out;
 }
 
 .gallery-entry figure {
-    transition: .1s linear;
     margin: 2rem
 }
 
 .gallery-entry figure img {
-    filter: grayscale(1)
+    width: 300px;
+    height: 170px;
+    transition: .5s ease-in;
+    display: block
 }
 
-.gallery-entry figure:hover {
-    transform: perspective(100px) translateZ(3px) rotate(-1deg);
-    filter: drop-shadow(10px 10px 20px #000)
+.gallery-entry figure div{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    width: 300px;
+    height: 170px;
+    transition: .1s ease-in-out;
 }
 
-.gallery-entry figure:hover img {
-    filter: none
+.gallery-entry figure:hover div {
+    filter: blur(10px);
+    mix-blend-mode: hard-light;
+    display: block;
+    opacity: 1;
 }
 
 
+.gallery-entry figure:hover figcaption{
+    box-shadow: inset 300px 0 0 0 var(--c-text-accent);
+    color: var(--c-bg-secondary);
+}

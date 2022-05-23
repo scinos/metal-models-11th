@@ -1,10 +1,9 @@
 ---
 title: Snowspeeder
-description:
+description: Metal model of a Snowspeeder from Star Wars, by Metal Earth
 date: 2021-10-14
 pictures:
-    model: 6
-    detail: 5
+    entry: 1
 officialModel: https://www.metalearth.com/starwars/snowspeeder
 ---
 

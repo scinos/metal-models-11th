@@ -1,13 +1,10 @@
 ---
 title: Iron Man's armor
-description: Large metal model of Iron Man's armor
+description: Large metal model of Iron Man's armor, from Piececool
 date: 2022-01-20
-opengraph:
-    image: https://metalfolds.page/images/other/ironman/card.jpg
 pictures:
-    model: 4
-    detail: 8
-verticalPictures: true
+    vertical: true
+    entry: card
 officialModel: http://piececool.com/showinfo-54-363-0.html
 ---
 
