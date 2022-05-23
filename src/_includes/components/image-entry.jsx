@@ -1,15 +1,20 @@
 import ImageProcess from '@11ty/eleventy-img';
 
-export function ImageEntry({ imagePath }) {
-    const options = {
-        widths: [300],
-        formats: ['webp'],
-        urlPath: '/img/',
-        outputDir: './_site/img/',
-    };
+const OPTIONS = {
+    widths: [300, 630],
+    formats: ['webp'],
+    urlPath: '/img/',
+    outputDir: './_site/img/',
+};
 
-    ImageProcess(imagePath, options);
-    const stats = ImageProcess.statsSync(imagePath, options);
+export function imageStats({ imagePath }) {
+    const stats = ImageProcess.statsSync(imagePath, OPTIONS);
+    return stats;
+}
+
+export function ImageEntry({ imagePath }) {
+    ImageProcess(imagePath, OPTIONS);
+    const stats = imageStats({ imagePath });
 
     return (
         <>
