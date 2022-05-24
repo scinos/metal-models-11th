@@ -1,6 +1,6 @@
 ---
 title: 'Starcraft: Siege Tank'
-description: Metal model of a Siege Tank from Starcraft II, by Piececool
+description: Metal model of a Siege Tank from Starcraft II, by MU
 date: 2022-05-03
 pictures:
     entry: 12
@@ -20,5 +20,3 @@ either.
 The design is just austonding. I love the vibrant blue color for the body parts and matte black for the wheels. The
 pieces have a lot of detail (there is even a tiny shovel!). Once built, it feels quite sturdy. Plus the turret is
 movable (it turns 360°), how cool is that?
-
-Looks like the model is discontinued, I can't find it in the Piececool site
