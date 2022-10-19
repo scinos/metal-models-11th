@@ -3,6 +3,7 @@ import EleventyContext from 'eleventy-plugin-react-ssr/context';
 import { Header } from './header';
 import { Footer } from './footer';
 import { Metatags } from './metatags';
+import { InlineStyle } from './inline-style';
 
 export function HTMLPage({ children, isModel }) {
     const { title, eleventy, data, page } = useContext(EleventyContext);
@@ -24,9 +25,20 @@ export function HTMLPage({ children, isModel }) {
                     href="https://fonts.googleapis.com/css2?family=Titillium+Web&amp;display=swap"
                     rel="stylesheet"
                 />
-                <link href="/css/style.css" rel="stylesheet" />
+                <InlineStyle
+                    styles={[
+                        '../../css/vars.css',
+                        '../../css/base.css',
+                        '../../css/navbar.css',
+                        '../../css/gallery.css',
+                        '../../css/footer.css',
+                    ]}
+                />
                 {isModel && (
-                    <link href="/css/photoswipe.css" rel="stylesheet" />
+                    <>
+                        <script src="/js/photoswipe.js" defer />
+                        <link href="/css/photoswipe.css" rel="stylesheet" />
+                    </>
                 )}
             </head>
 
@@ -37,7 +49,6 @@ export function HTMLPage({ children, isModel }) {
                     {children}
                 </div>
                 <Footer generator={generator} />
-                {isModel && <script src="/js/photoswipe.js" />}
             </body>
         </html>
     );
