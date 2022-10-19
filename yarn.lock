@@ -55,30 +55,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@11ty/eleventy@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@11ty/eleventy@npm:1.0.1"
+"@11ty/eleventy@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@11ty/eleventy@npm:1.0.2"
   dependencies:
     "@11ty/dependency-tree": ^2.0.1
     "@11ty/eleventy-utils": ^1.0.1
     "@iarna/toml": ^2.2.5
     "@sindresorhus/slugify": ^1.1.2
-    browser-sync: ^2.27.9
+    browser-sync: ^2.27.10
     chokidar: ^3.5.3
     cross-spawn: ^7.0.3
     debug: ^4.3.4
     dependency-graph: ^0.11.0
-    ejs: ^3.1.6
+    ejs: ^3.1.8
     fast-glob: ^3.2.11
     graceful-fs: ^4.2.10
     gray-matter: ^4.0.3
     hamljs: ^0.6.2
     handlebars: ^4.7.7
     is-glob: ^4.0.3
-    kleur: "^4.1.4 "
-    liquidjs: ^9.36.1
+    kleur: ^4.1.5
+    liquidjs: ^9.40.0
     lodash: ^4.17.21
-    luxon: ^2.3.2
+    luxon: ^2.5.0
     markdown-it: ^12.3.2
     minimist: ^1.2.6
     moo: ^0.5.1
@@ -86,7 +86,7 @@ __metadata:
     mustache: ^4.2.0
     normalize-path: ^3.0.0
     nunjucks: ^3.2.3
-    path-to-regexp: ^6.2.0
+    path-to-regexp: ^6.2.1
     please-upgrade-node: ^3.2.0
     pretty: ^2.0.0
     pug: ^3.0.2
@@ -95,7 +95,7 @@ __metadata:
     slugify: ^1.6.5
   bin:
     eleventy: cmd.js
-  checksum: 0563030ba24c651620ca9aab5f80d772c9a765cb9ee4689910c69e84a595ca7d8c602cc58161550baf0e918474150aec3f687150330d2434862c05cd2a6326a8
+  checksum: 00b06b5879955ffbcdca6340fb78a3731d0b68d30eec1ba368f2321270525db0d9c0efa8515e69df8e7b258823c2d00f36629e67be301232a731bcad34a96ffd
   languageName: node
   linkType: hard
 
@@ -2458,14 +2458,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"async@npm:1.5.2":
-  version: 1.5.2
-  resolution: "async@npm:1.5.2"
-  checksum: 9ee84592c393aad1047d1223004317ecc65a9a3f76101e0f4614a0818eac962e666510353400a3c9ea158df540579a293f486f3578e918c5e90a0f5ed52e8aea
-  languageName: node
-  linkType: hard
-
-"async@npm:^2.6.2":
+"async@npm:^2.6.0, async@npm:^2.6.2":
   version: 2.6.4
   resolution: "async@npm:2.6.4"
   dependencies:
@@ -2804,21 +2797,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browser-sync-client@npm:^2.27.9":
-  version: 2.27.9
-  resolution: "browser-sync-client@npm:2.27.9"
+"browser-sync-client@npm:^2.27.10":
+  version: 2.27.10
+  resolution: "browser-sync-client@npm:2.27.10"
   dependencies:
     etag: 1.8.1
     fresh: 0.5.2
     mitt: ^1.1.3
     rxjs: ^5.5.6
-  checksum: b4764a4d82e4872824cb65986ba85946e901e8563680870d50f043a97ef91476495f5cdc32300967e8964ca1ae938b6c7f1d3aeec5c04514529a482b3ce0407b
+    typescript: ^4.6.2
+  checksum: c6544e60c0ac81ac19c8133fe522b6efa561d9d027846dcc7638e4fc22f017a0fe6c10e56e72d37964e59181ee95fa2e405fcf423dd5182f6659a8b39fad49be
   languageName: node
   linkType: hard
 
-"browser-sync-ui@npm:^2.27.9":
-  version: 2.27.9
-  resolution: "browser-sync-ui@npm:2.27.9"
+"browser-sync-ui@npm:^2.27.10":
+  version: 2.27.10
+  resolution: "browser-sync-ui@npm:2.27.10"
   dependencies:
     async-each-series: 0.1.1
     connect-history-api-fallback: ^1
@@ -2826,16 +2820,16 @@ __metadata:
     server-destroy: 1.0.1
     socket.io-client: ^4.4.1
     stream-throttle: ^0.1.3
-  checksum: ec50dde03807f4dbe72fe4e1225db6a5061b85157c1443555a56bc7ce373f4da05574ecd21adaf49286fef567bd7aa82bd79909798bd11722aea37a8c8a27256
+  checksum: a5921f0de2f43cf9f9520d42d9ac5d49721da8cd45c707df2805779ff09f702943231ba2216278e0e8a0a8581616164845c27cc504c994712533153dd789b6c4
   languageName: node
   linkType: hard
 
-"browser-sync@npm:^2.27.9":
-  version: 2.27.9
-  resolution: "browser-sync@npm:2.27.9"
+"browser-sync@npm:^2.27.10":
+  version: 2.27.10
+  resolution: "browser-sync@npm:2.27.10"
   dependencies:
-    browser-sync-client: ^2.27.9
-    browser-sync-ui: ^2.27.9
+    browser-sync-client: ^2.27.10
+    browser-sync-ui: ^2.27.10
     bs-recipes: 1.3.4
     bs-snippet-injector: ^2.0.1
     chokidar: ^3.5.1
@@ -2852,7 +2846,7 @@ __metadata:
     localtunnel: ^2.0.1
     micromatch: ^4.0.2
     opn: 5.3.0
-    portscanner: 2.1.1
+    portscanner: 2.2.0
     qs: 6.2.3
     raw-body: ^2.3.2
     resp-modifier: 6.0.2
@@ -2866,7 +2860,7 @@ __metadata:
     yargs: ^17.3.1
   bin:
     browser-sync: dist/bin.js
-  checksum: 45dea325506f1a09d53aedb623f989e9f37b0e84f469dba033719065ba0fb2d36415d8d6253cdaa5634ec697f410068e5fe74ddd8bf2aa20789ba3fe494c1bd0
+  checksum: 8ad4d881925af91829c31852ce0c84864ece63a132f0128c4bdd267d663fe1fc82854bcf378ac62aaad762252ae6a262a0035b9eda5c7f532214b5d6ed185583
   languageName: node
   linkType: hard
 
@@ -4253,14 +4247,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ejs@npm:^3.1.6":
-  version: 3.1.7
-  resolution: "ejs@npm:3.1.7"
+"ejs@npm:^3.1.8":
+  version: 3.1.8
+  resolution: "ejs@npm:3.1.8"
   dependencies:
     jake: ^10.8.5
   bin:
     ejs: bin/cli.js
-  checksum: 7b7ddc9d4f574d57e6b3e7f9049ddf0af33f38995886fb4dd8b335f56839cc04b1cdd983d1b5b9cfcaa5c1372b643e6d68d2fcecdc1b5fdbdeab55b24245135e
+  checksum: a6bd58633c5b3ae19a2bfea1b94033585ad85c87ec15961f8c89c93ffdafb8b2358af827f37f7552b35d9f5393fdbd98d35a8cbcd0ee2540b7f9f7a194e86a1a
   languageName: node
   linkType: hard
 
@@ -7497,10 +7491,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"kleur@npm:^4.1.4 ":
-  version: 4.1.4
-  resolution: "kleur@npm:4.1.4"
-  checksum: c70aaa99a6797b0a73a6f8a84c3912dbf49c95acf78cb661e30677999914843d0f5deedb0910458259c43c5fd98ea3195777988a8291c058874e29344dd1ea0c
+"kleur@npm:^4.1.5":
+  version: 4.1.5
+  resolution: "kleur@npm:4.1.5"
+  checksum: e9de6cb49657b6fa70ba2d1448fd3d691a5c4370d8f7bbf1c2f64c24d461270f2117e1b0afe8cb3114f13bbd8e51de158c2a224953960331904e636a5e4c0f2a
   languageName: node
   linkType: hard
 
@@ -7588,13 +7582,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"liquidjs@npm:^9.36.1":
-  version: 9.37.0
-  resolution: "liquidjs@npm:9.37.0"
+"liquidjs@npm:^9.40.0":
+  version: 9.42.0
+  resolution: "liquidjs@npm:9.42.0"
   bin:
     liquid: bin/liquid.js
     liquidjs: bin/liquid.js
-  checksum: 75d8de65478c73650612ea8dcf6856b084b76b4d43832922ebf324458db056ca991398f9501baa756c404b7465dbcb166427aa9047b54b5330af2d358bbbbedb
+  checksum: 6ec4ab24385c488c95be88d8c2b717bf13ba309c5e635f921b0f366fab6d6b0e2aa02d948a271972363cc2f61d18488285c09615063215d09a2c132d57d55035
   languageName: node
   linkType: hard
 
@@ -7887,10 +7881,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"luxon@npm:^2.3.2":
-  version: 2.3.2
-  resolution: "luxon@npm:2.3.2"
-  checksum: d7f79c1dbcb28e0091deb3db1c51de09bda73ed753cd7e1da81f633befc905e858e748019f9a7ced7594840807338958485443063b06d576d86b214cc9ec54b6
+"luxon@npm:^2.5.0":
+  version: 2.5.0
+  resolution: "luxon@npm:2.5.0"
+  checksum: ff47e1fc70a796630001f3a60433b4a96bb1da0b10e70bf191fa33f57161c882d2d1380101665d7b36e83c79e3e820589ebffe5a46f73a5e104e89c7770d8cff
   languageName: node
   linkType: hard
 
@@ -8121,7 +8115,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "metalearth-11ty@workspace:."
   dependencies:
-    "@11ty/eleventy": ^1.0.1
+    "@11ty/eleventy": ^1.0.2
     "@11ty/eleventy-img": ^2.0.1
     "@11ty/eleventy-navigation": ^0.3.2
     "@babel/core": ^7.17.10
@@ -9145,10 +9139,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"path-to-regexp@npm:^6.2.0":
-  version: 6.2.0
-  resolution: "path-to-regexp@npm:6.2.0"
-  checksum: 902e8b4211fa96ca0ae9d5d6bcac09232e5572002fc16a3f4ed2faec2a761fe986f90ee7092477cf2afdbd830ced297b015b49be826124b119535ecce4bb6fa5
+"path-to-regexp@npm:^6.2.1":
+  version: 6.2.1
+  resolution: "path-to-regexp@npm:6.2.1"
+  checksum: 7a73811ca703e5c199e5b50b9649ab8f6f7b458a37f7dff9ea338815203f5b1f95fe8cb24d4fdfe2eab5d67ce43562d92534330babca35cdf3231f966adb9360
   languageName: node
   linkType: hard
 
@@ -9239,13 +9233,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"portscanner@npm:2.1.1":
-  version: 2.1.1
-  resolution: "portscanner@npm:2.1.1"
+"portscanner@npm:2.2.0":
+  version: 2.2.0
+  resolution: "portscanner@npm:2.2.0"
   dependencies:
-    async: 1.5.2
+    async: ^2.6.0
     is-number-like: ^1.0.3
-  checksum: 6f8f5648c035df0e485224846a56306395dd5e668d2aa2f86c415f2f13b271a4914e1bffd64b670e7242881b36008faa8a39c963a7ab125802431338c1033a01
+  checksum: d61af2143af13b27be0be767f40a34801e203d811c81c637828e6b07f78e667f175df276832638eeefb4ecf88aad78777061cea101fdae15f2f1c4939a6bc14a
   languageName: node
   linkType: hard
 
@@ -12088,6 +12082,26 @@ __metadata:
   dependencies:
     is-typedarray: ^1.0.0
   checksum: 4ac5b7a93d604edabf3ac58d3a2f7e07487e9f6e98195a080e81dbffdc4127817f470f219d794a843b87052cedef102b53ac9b539855380b8c2172054b7d5027
+  languageName: node
+  linkType: hard
+
+"typescript@npm:^4.6.2":
+  version: 4.8.4
+  resolution: "typescript@npm:4.8.4"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 663bf455b21ac024e719bb8c6a07bcaaa027a9943abfb58a694b59789e7d08578badb5556170267ad480e31786b8b4c8ab3c9c0e597d3b8df39af800e43c6ed5
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^4.6.2#~builtin<compat/typescript>":
+  version: 4.8.4
+  resolution: "typescript@patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=bda367"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 1718691812158b74a29fe29e1c2031150719c24e8a8157c215b2d4db5bc9c5f59427185a0661e65f8875957b921a047946cf51da05c4c9c632c2dbfd1a43e105
   languageName: node
   linkType: hard
 
