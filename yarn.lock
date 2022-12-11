@@ -5404,7 +5404,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"espree@npm:^9.0.0":
+"espree@npm:^9.0.0, espree@npm:^9.4.0":
   version: 9.4.1
   resolution: "espree@npm:9.4.1"
   dependencies:
@@ -5412,17 +5412,6 @@ __metadata:
     acorn-jsx: ^5.3.2
     eslint-visitor-keys: ^3.3.0
   checksum: f7c8f891f3b247c76ed16259522c772bb35e6a9cb5f5b2e0f111ffc60624e7533c89a0aa1f830d8f8baa2b7676313bb9ce7f64ae00ccffc223ebbf880ab691ee
-  languageName: node
-  linkType: hard
-
-"espree@npm:^9.4.0":
-  version: 9.4.0
-  resolution: "espree@npm:9.4.0"
-  dependencies:
-    acorn: ^8.8.0
-    acorn-jsx: ^5.3.2
-    eslint-visitor-keys: ^3.3.0
-  checksum: 95f1f9ac49fa112bfc2d2e82fd9e85192367090a9ee03b1e43594e85e29a3458b603b4cf7cd5ccfb156da2b94d07e7f5428474c830faa6f19db47a0b86dd3656
   languageName: node
   linkType: hard
 
@@ -6365,7 +6354,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^8.0.0":
+"glob@npm:^8.0.0, glob@npm:^8.0.1":
   version: 8.0.3
   resolution: "glob@npm:8.0.3"
   dependencies:
@@ -6375,20 +6364,6 @@ __metadata:
     minimatch: ^5.0.1
     once: ^1.3.0
   checksum: 07ebaf2ed83e76b10901ec4982040ebd85458b787b4386f751a0514f6c8e416ed6c9eec5a892571eb0ef00b09d1bd451f72b5d9fb7b63770efd400532486e731
-  languageName: node
-  linkType: hard
-
-"glob@npm:^8.0.1":
-  version: 8.0.1
-  resolution: "glob@npm:8.0.1"
-  dependencies:
-    fs.realpath: ^1.0.0
-    inflight: ^1.0.4
-    inherits: 2
-    minimatch: ^5.0.1
-    once: ^1.3.0
-    path-is-absolute: ^1.0.0
-  checksum: 5886928f2a2797c6109670c18750a67b8f99b398aa2f029f0b92dec2fb8b8cdc92c57b6410cf8998e75a18d2ffee38d918f9060a5dbc82d9cc34059b2de72f1f
   languageName: node
   linkType: hard
 
@@ -8462,16 +8437,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:^4.0.10":
-  version: 4.0.14
-  resolution: "marked@npm:4.0.14"
-  bin:
-    marked: bin/marked.js
-  checksum: 7b53312da1a47763985d842b9715f5184cbff993da2793cf4f0eadcf067243a3b4658df8d847726126f87b004c87f3359c60bbde7c15ca12f5bbc458defb3b7b
-  languageName: node
-  linkType: hard
-
-"marked@npm:^4.0.14":
+"marked@npm:^4.0.10, marked@npm:^4.0.14":
   version: 4.2.4
   resolution: "marked@npm:4.2.4"
   bin:
@@ -11442,18 +11408,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.0.0, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7":
-  version: 7.3.7
-  resolution: "semver@npm:7.3.7"
-  dependencies:
-    lru-cache: ^6.0.0
-  bin:
-    semver: bin/semver.js
-  checksum: cffd30102de68a9f8cac9ef57b43c2173dc999da4fc5189872b421f9c9e2660f70243b8e964781ac6dc48ba2542647bb672beeb4d756c89c4a9e05e1144fa40a
-  languageName: node
-  linkType: hard
-
-"semver@npm:^7.1.2":
+"semver@npm:^7.0.0, semver@npm:^7.1.2, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7":
   version: 7.3.8
   resolution: "semver@npm:7.3.8"
   dependencies:
@@ -12608,16 +12563,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"uglify-js@npm:^3.1.4":
-  version: 3.15.4
-  resolution: "uglify-js@npm:3.15.4"
-  bin:
-    uglifyjs: bin/uglifyjs
-  checksum: 0995c629d2e7ea5c70f249a7135c3fa069d297d35a8f5a8f009147fd9b9357a632f1daac682ec75c0929cd2e805bb42eb9ff69fd8b59da345003190634f40a42
-  languageName: node
-  linkType: hard
-
-"uglify-js@npm:^3.7.7":
+"uglify-js@npm:^3.1.4, uglify-js@npm:^3.7.7":
   version: 3.17.4
   resolution: "uglify-js@npm:3.17.4"
   bin:
