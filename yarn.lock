@@ -5643,18 +5643,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"firebase-frameworks@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "firebase-frameworks@npm:0.3.0"
+"firebase-frameworks@npm:^0.4.2":
+  version: 0.4.2
+  resolution: "firebase-frameworks@npm:0.4.2"
   dependencies:
+    fs-extra: ^10.1.0
+    jsonc-parser: ^3.0.0
+    semver: ^7.3.7
     tslib: ^2.3.1
-  checksum: 040342e69b18da317064a5218672a7c9f84cc761c7b17e868c90eec11133e4ff79e31bdc3241c6154a5155cef52fa6d9eea398e9b95616b3bcfdd6f917fedf47
+  checksum: ac95bf5fa42e9098011e64f424226d40f7b68fe8993ce05fef718738bec710197611f2bf7386aff5ec564e731dc94068a711bbd8ff512f42fa2cb3216415e44a
   languageName: node
   linkType: hard
 
-"firebase-tools@npm:^10.7.2":
-  version: 10.7.2
-  resolution: "firebase-tools@npm:10.7.2"
+"firebase-tools@npm:^10.9.2":
+  version: 10.9.2
+  resolution: "firebase-tools@npm:10.9.2"
   dependencies:
     "@google-cloud/pubsub": ^2.18.4
     abort-controller: ^3.0.0
@@ -5677,7 +5680,7 @@ __metadata:
     exit-code: ^1.0.2
     express: ^4.16.4
     filesize: ^6.1.0
-    firebase-frameworks: ^0.3.0
+    firebase-frameworks: ^0.4.2
     fs-extra: ^5.0.0
     glob: ^7.1.2
     google-auth-library: ^7.11.0
@@ -5718,7 +5721,7 @@ __metadata:
     ws: ^7.2.3
   bin:
     firebase: lib/bin/firebase.js
-  checksum: 85f80bb16fcef1ac527577487086b82627d848e47e227e88a5e1ee8a33e46ee4af28f1ca596dcd7dc8b2a6b878bfcd5c4b4b6327455b912c08b15b9cfee9c6ae
+  checksum: aaf6eb70f9a5756c8121b9798cd288d8dbc2846b6acd1a56e2011e9579382a10e3e565cc5e0c3537ec233647f9ecaf5d38420c65e17faa0940e0a7dae1b44224
   languageName: node
   linkType: hard
 
@@ -5828,6 +5831,17 @@ __metadata:
     jsonfile: ^3.0.0
     universalify: ^0.1.0
   checksum: ac3a17c9355f80aa250e102dbc4939c50ec83fca49a144bdd432f43deb0a3c07f74ec313feb2b938d6b0c1de9bfb02c2358bc602efeed5174fca692b7d4694f1
+  languageName: node
+  linkType: hard
+
+"fs-extra@npm:^10.1.0":
+  version: 10.1.0
+  resolution: "fs-extra@npm:10.1.0"
+  dependencies:
+    graceful-fs: ^4.2.0
+    jsonfile: ^6.0.1
+    universalify: ^2.0.0
+  checksum: 5f579466e7109719d162a9249abbeffe7f426eb133ea486e020b89bc6d67a741134076bf439983f2eb79276ceaf6bd7b7c1e43c3fd67fe889863e69072fb0a5e
   languageName: node
   linkType: hard
 
@@ -7433,6 +7447,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jsonc-parser@npm:^3.0.0":
+  version: 3.2.0
+  resolution: "jsonc-parser@npm:3.2.0"
+  checksum: 5a12d4d04dad381852476872a29dcee03a57439574e4181d91dca71904fcdcc5e8e4706c0a68a2c61ad9810e1e1c5806b5100d52d3e727b78f5cdc595401045b
+  languageName: node
+  linkType: hard
+
 "jsonfile@npm:^3.0.0":
   version: 3.0.1
   resolution: "jsonfile@npm:3.0.1"
@@ -7454,6 +7475,19 @@ __metadata:
     graceful-fs:
       optional: true
   checksum: 7dc94b628d57a66b71fb1b79510d460d662eb975b5f876d723f81549c2e9cd316d58a2ddf742b2b93a4fa6b17b2accaf1a738a0e2ea114bdfb13a32e5377e480
+  languageName: node
+  linkType: hard
+
+"jsonfile@npm:^6.0.1":
+  version: 6.1.0
+  resolution: "jsonfile@npm:6.1.0"
+  dependencies:
+    graceful-fs: ^4.1.6
+    universalify: ^2.0.0
+  dependenciesMeta:
+    graceful-fs:
+      optional: true
+  checksum: 4f95b5e8a5622b1e9e8f33c96b7ef3158122f595998114d1e7f03985649ea99cb3cd99ce1ed1831ae94c8c8543ab45ebd044207612f31a56fd08462140e46865
   languageName: node
   linkType: hard
 
@@ -8237,7 +8271,7 @@ __metadata:
     eslint-plugin-prettier: ^4.2.1
     eslint-plugin-react: ^7.31.10
     eslint-plugin-react-hooks: ^4.6.0
-    firebase-tools: ^10.7.2
+    firebase-tools: ^10.9.2
     photoswipe: ^5.3.2
     prettier: ^2.8.1
     react: ^18.2.0
@@ -12454,6 +12488,13 @@ __metadata:
   version: 0.1.2
   resolution: "universalify@npm:0.1.2"
   checksum: e70e0339f6b36f34c9816f6bf9662372bd241714dc77508d231d08386d94f2c4aa1ba1318614f92015f40d45aae1b9075cd30bd490efbe39387b60a76ca3f045
+  languageName: node
+  linkType: hard
+
+"universalify@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "universalify@npm:2.0.0"
+  checksum: 07092b9f46df61b823d8ab5e57f0ee5120c178b39609a95e4a15a98c42f6b0b8e834e66fbb47ff92831786193be42f1fd36347169b88ce8639d0f9670af24a71
   languageName: node
   linkType: hard
 
