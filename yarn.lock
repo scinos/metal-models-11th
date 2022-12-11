@@ -8272,7 +8272,7 @@ __metadata:
     eslint-plugin-react: ^7.31.10
     eslint-plugin-react-hooks: ^4.6.0
     firebase-tools: ^10.9.2
-    photoswipe: ^5.3.2
+    photoswipe: ^5.3.4
     prettier: ^2.8.1
     react: ^18.2.0
     react-dom: ^18.2.0
@@ -9318,10 +9318,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"photoswipe@npm:^5.3.2":
-  version: 5.3.2
-  resolution: "photoswipe@npm:5.3.2"
-  checksum: b96bdec2fc835b86be045f058243bd727577270fd4c84772bfad8108ca852663048e657cb4f4e86e2217204d384bd1c050c27ffe872ab37103b770332121ea40
+"photoswipe@npm:^5.3.4":
+  version: 5.3.4
+  resolution: "photoswipe@npm:5.3.4"
+  checksum: 09e0d257d5e7a1321f5a6c5f10af7894543f6aeb80474354e9c0bd2272c131d282842efb228a55c3acbc11a51582502eaf5d279816c311e9c4c62c6774e110d2
   languageName: node
   linkType: hard
 
