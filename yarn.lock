@@ -3456,12 +3456,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clean-css@npm:^5.3.1":
-  version: 5.3.1
-  resolution: "clean-css@npm:5.3.1"
+"clean-css@npm:^5.3.3":
+  version: 5.3.3
+  resolution: "clean-css@npm:5.3.3"
   dependencies:
     source-map: ~0.6.0
-  checksum: c8e111c8e3af09fea50e93870eddcdb82fb2df3e00ff56a41d64a8707285a9a1c4e7121fa4223599f004bb97ee48b50fbf13d8c0f3cf9cc7ca7af08f1bd2a511
+  checksum: 381de7523e23f3762eb180e327dcc0cedafaf8cb1cd8c26b7cc1fc56e0829a92e734729c4f955394d65ed72fb62f82d8baf78af34b33b8a7d41ebad2accdd6fb
   languageName: node
   linkType: hard
 
@@ -8302,7 +8302,7 @@ __metadata:
     "@babel/preset-react": ^7.18.6
     "@babel/register": ^7.18.9
     babel-plugin-inline-react-svg: ^2.0.1
-    clean-css: ^5.3.1
+    clean-css: ^5.3.3
     eleventy-plugin-react-ssr: ^1.0.2
     esbuild: ^0.16.13
     eslint: ^8.31.0
